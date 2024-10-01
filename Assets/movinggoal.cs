@@ -14,7 +14,7 @@ public class movinggoal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mathf.Sin(Time.time) * 2.0f + initialPosition.x, initialPosition.y, initialPosition.z);
+        transform.position = new Vector3(initialPosition.x, initialPosition.y, Mathf.Sin(Time.time) * 4.0f + initialPosition.z);
     }
 
 }
